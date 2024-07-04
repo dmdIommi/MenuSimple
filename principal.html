@@ -52,6 +52,9 @@
           </a>
 
 
+          
+
+        
         </nav>
       </div>
     </header>
@@ -66,7 +69,8 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            font-family: Arial, sans-serif;
+            font-family: 'Dancing Script', cursive;
+          
         }
 
         .half-screen {
@@ -86,7 +90,7 @@
         }
 
         .bottom-half {
-            background-image: url('noche (2).jpg'); /* Reemplaza con la ruta de tu segunda imagen */
+            background-image: url('noche\ \(2\).jpg'); /* Reemplaza con la ruta de tu segunda imagen */
         }
 
         button {
@@ -119,32 +123,43 @@
     </style>
 </head>
 <body>
-    <div class="half-screen top-half">
-        <button class="button-53">Menu Dia</button>
+    <div  class="half-screen top-half">
+      
+        <button  onclick="irAURL()" class="button-53">MENU DIA</button>
+     
+        
     </div>
     <div class="half-screen bottom-half">
-        <button class="button-53">Menu Noche</button>
+        <button onclick="otraURl()" class="button-53">MENU NOCHE</button>
     </div>
+    <script>
+      function irAURL() {
+        window.location.href = "https://dmdiommi.github.io/menunoche.pdf";
+      }
+      function otraURl(){
+        window.location.href ="https://dmdiommi.github.io/menudia.pdf";
+      }
+    </script>
     <Style>
       
 
 
 /* CSS */
 .button-53 {
-  background-color: #3DD1E7;
+  background-color: rgba(9, 7, 25, 0.6);
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
-  color: #000000;
+  color: #e0dddd;
   display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
   font-weight: 700;
   justify-content: center;
-  line-height: 1.75rem;
+  line-height: 2rem;
   padding: .75rem 1.65rem;
   position: relative;
   text-align: center;
-  text-decoration: none #000000 solid;
+  text-decoration: none #f5efef solid;
   text-decoration-thickness: auto;
   width: 70%;
   max-width: 460px;
